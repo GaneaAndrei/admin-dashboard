@@ -18,7 +18,9 @@ body{
 }
 .header{
     grid-row: 1/2;
-    background-color: purple;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 .main-content{
 
@@ -38,4 +40,72 @@ body{
 .trending{
     grid-column: 2/3;
     background-color: orange;
+}
+.top-half{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+.bottom-half{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 40px;
+
+}
+.welcome{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.welcome-text p , .welcome-text h3{
+    margin: 0;
+}
+.bottom-half .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.btn{
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: #0ea5e9;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.svg{
+    height: 20px;
+    width: 20px;
+}
+.search-input{
+    width: 700px;
+    border: 2px solid #d4d4d4;
+    background-color: #d4d4d4;
+    border-radius: 25px;
+}
+.profile-pic{
+    height: 35px;
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.profile-pic2{
+    height: 55px;
+    width: 55px;
+    border: 2px solid white;
+    border-radius: 25px;
 }
